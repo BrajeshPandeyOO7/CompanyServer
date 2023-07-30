@@ -1,7 +1,7 @@
-import { APIReturnType } from "./interfaces";
+import { APIResponse } from "./interfaces";
 
 export const sendResult = (ok: boolean,data: unknown) => {
-    const result: APIReturnType = {
+    const result: APIResponse = {
         ok,
         data
     };
