@@ -14,7 +14,7 @@ export class CompanyController {
     async createCompany(@Body() compayData: CompanyDto): Promise<APIResponse> {
         try {
             const result = await this.companyService.create(compayData);
-            return sendResult(true, result);
+            return sendResult(true, result)
         } catch (error) {
             return sendResult(false,error.message);
         }

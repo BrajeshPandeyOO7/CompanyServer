@@ -12,6 +12,6 @@ export class CompanyService {
 
     async create(company: Company) : Promise<Partial<CompanyDto>> {
         const result = await this.companyModel.create(company);
-        return result;
+        return result
     }
 }
